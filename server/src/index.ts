@@ -1,18 +1,18 @@
 import { Socket } from "socket.io";
-import http from "http";
-import express from 'express';
+import http from 'http';
 import { Server } from 'socket.io';
 import { User, UserManger } from "./manager/UserManger";
 import { RoomManger } from "./manager/RoomManager";
 
 
+
+
 // create server and express componet 
-const app = express();
-const server = http.createServer(http);
+const server = http.createServer(http)
 
 const io = new Server(server, {
     cors: {
-        origin: "*"
+        origin: '*'
     }
 });
 
@@ -22,12 +22,11 @@ const userManger = new UserManger();
 
 
 io.on('connection', (socket: Socket) => {
-    // console.log('a user connected');
+    console.log('a user connected');
     // console.log('socket id - ' + socket.id)
 
     socket.on("disconnect", () => {
         console.log("user disconnected");
-        
         // console.log(socket.id);
     })
 
