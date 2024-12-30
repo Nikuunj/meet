@@ -1,4 +1,4 @@
-```markdown
+
 # Meet - Real-time Chat Application
 
 Meet is a real-time messaging application built with Socket.io, Node.js, Express, and React. Users can create and join chat rooms, send and receive messages instantly, and enjoy a seamless communication experience.
