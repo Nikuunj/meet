@@ -103,9 +103,14 @@ function Chat() {
             />
           </div>
 
+
           <div className='flex justify-center items-center w-full mt-5'>
-            <button className='bg-gray-500 rounded-md px-10 me-2 py-2'  onClick={() => setJoin(true)}>Join Room</button>
-            <button className='bg-green-700 rounded-md px-10 py-2' onClick={() => setCreate(true)}>Create Room</button>
+
+            {socket === null ? 'Wating...' : 
+            (<>
+              <button className='bg-gray-500 rounded-md px-10 me-2 py-2'  onClick={() => setJoin(true)}>Join Room</button>
+              <button className='bg-green-700 rounded-md px-10 py-2' onClick={() => setCreate(true)}>Create Room</button>
+            </>) }
           </div>
         </div>
       )}
