@@ -134,7 +134,7 @@ function Chat() {
       <>
       {/* Display messages */}
       <div>
-        <div className='mx duration-500'>
+        <div className='mx-2 min-h-[82vh] mt-1 duration-500'>
           {messages.map((msg, index) => (
               <div
               key={index}
@@ -162,7 +162,7 @@ function Chat() {
 
            {/* Message input and send button */}
            {(roomId && (create || join)) && (
-        <div className='w-full fixed bg-slate-800 pt-3 pb-5 bottom-0'>
+        <div className='w-full sticky flex bg-slate-800 pt-3 pb-5 bottom-0'>
           <input
             className='w-[90%] me-5 bg-slate-300 ms-5 p-3 rounded-lg' 
             type="text"
