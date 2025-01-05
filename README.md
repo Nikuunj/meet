@@ -38,19 +38,21 @@ To run the project locally, you'll need to start both the backend server (Node.j
    In the `server/` directory, run the following command to start the server:
 
    ```bash
+   cd server &&
    npm install &&
-   npm run server
+   npm run dev
    ```
 
    This will start the backend server at `http://localhost:3000`.
 
 2. **Start the frontend**:
 
-   In the `client/` directory, run the following command to start the React frontend:
+   In the `frontend/` directory, run the following command to start the React frontend:
 
    ```bash
+   cd frontend && 
    npm install &&
-   npm run server
+   npm run dev
    ```
 
    This will open the frontend app in your default browser at `http://localhost:5173`.
@@ -66,7 +68,7 @@ This will launch both the backend server and the frontend client concurrently.
 ├── client/                 # React frontend
 │   ├── public/             # Public files (e.g., images, icons)
 │   ├── src/                # React components and assets
-│   └── index.tsx           # React entry point
+│   └── main.tsx           # React entry point
 ├── server/                 # Backend server
 │   ├── src/                # Room and user management logic
 │       ├── intex.ts        # Socket.io and Express server
