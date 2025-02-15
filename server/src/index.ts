@@ -8,7 +8,7 @@ import { RoomManger } from "./manager/RoomManager";
 
 
 // create server and express componet 
-const server = http.createServer(http)
+const server = http.createServer()
 
 const io = new Server(server, {
     cors: {
