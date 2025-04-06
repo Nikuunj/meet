@@ -64,7 +64,3 @@ io.on('connection', (socket: Socket) => {
     });
 
 });
-
-server.listen(80, () => {
-    console.log('listening on *: 80');
-});
