@@ -3,12 +3,12 @@ import http from 'http';
 import { Server } from 'socket.io';
 import { User, UserManger } from "./manager/UserManger";
 import { RoomManger } from "./manager/RoomManager";
+import express from 'express'
 
 
-
-
+const app = express();
 // create server and express componet 
-const server = http.createServer()
+const server = app.listen(3000)
 
 const io = new Server(server, {
     cors: {
